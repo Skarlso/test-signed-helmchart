@@ -1,0 +1,12 @@
+components:
+- name: ocm.software/test-component-helm
+  version: 1.0.0
+  provider:
+    name: acme.org
+  resources:
+    - name: helm-chart
+      version: 1.0.0
+      type: helmChart
+      input:
+        type: helm/v1
+        path: ./test-helm-chart
